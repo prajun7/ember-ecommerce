@@ -1,0 +1,8 @@
+{{!-- Details and image components are inside the product component.
+These are called nested components.
+We call them by doing, <Product::Image /> or <Product::Details /> --}}
+
+<LinkTo @route="item" @model="1" class="product">
+  <Product::Image />  
+  <Product::Details />
+</LinkTo>
