@@ -22,11 +22,17 @@
 
   <div>
     <h5>Color</h5>
-    <div class="product-colors active-{{@color}}">
-      <span class="product-color color-red"
-        {{on "click" (fn @onChangeColor "red")}}></span>
-      <span class="product-color color-black"
-        {{on "click" (fn @onChangeColor "black")}}></span>
+    <div class="product-colors active-{{@color}}" type="button">
+      <button 
+        class="product-color color-red"
+        type="button" 
+        {{on "click" (fn @onChangeColor "red")}}
+      />
+      <button 
+        class="product-color color-black"
+        type="button" 
+        {{on "click" (fn @onChangeColor "black")}}
+      />
     </div>
   </div>
 </div>
